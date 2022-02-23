@@ -1,0 +1,52 @@
+input{
+    padding: 2%;
+    border-radius: 5px;
+    border: 2px solid green;
+    width:40%
+ 
+}
+select{
+    padding:2% 0 ;
+    border-radius: 5px;
+    border: 2px solid green;
+}
+#container,#hi{
+   margin-left: 30%;
+   margin-top: 5%;
+  
+}
+#country{
+    margin-top: 2%;
+}
+button{
+    border-radius: 5px;
+    background-color:grey;
+    margin-left:33%;
+    margin-top: 20%;
+    color: white;
+    width:30%
+}
+#ext p{
+    color: green;
+ }
+ #ext h5{
+     color: grey;
+ }
+ #ext button{
+     background-color: green;
+     color: white;
+     width:50%;
+     padding: 1%;
+     margin-right: 50px;
+    }
+ #ext{
+     background-color: white;
+ 
+     width: 50%;
+ }
+ #hi{
+     width:50%;
+ }
+  button:hover{
+     cursor: pointer;
+ }

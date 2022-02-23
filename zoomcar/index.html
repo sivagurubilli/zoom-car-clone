@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="navbar">
+
+        <button><h3 onclick="window.location.href=`num.html`">login/signup</h3><h4 onclick="details()"></h4></button>
+          <div id="show"></div>
+    </div>
+</body>
+</html>
+<script>
+
+let a=JSON.parse(localStorage.getItem("loginpersonname"))
+let b=JSON.parse(localStorage.getItem("userdata"))
+document.querySelector("h4").append(a)
+let count=0
+let details=()=>{
+ count++
+b.map(function(el){
+  
+    document.querySelector("#show").innerHTML=""
+ 
+    let p=document.createElement("p")
+    p.textContent=el.name
+    let p2=document.createElement("p")
+    p2.textContent=el.number
+    let p3=document.createElement("p")
+    p3.textContent=el.email
+    document.querySelector("#show").append(p,p2,p3)
+    if(count%2!=0){
+        document.querySelector("#show").style.display="block"
+    }
+    else{
+        document.querySelector("#show").style.display="none"
+    }
+})
+    
+}
+
+
+</script>

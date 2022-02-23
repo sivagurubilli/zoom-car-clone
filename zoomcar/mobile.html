@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mobile.css">
+    <title>Document</title>
+   
+</head>
+<body>
+
+    <div id="container">
+        <h3>Enter Mobile Number</h3>
+        <select id="country" >
+            <option value=""><h3>+91 Ind</h3></option>
+         <option value="ind" >+91 India</option>
+         <option value="egy" >+20 Egypt</option>
+         <option value="phil" >+63 Phillipiens</option>
+         <option value="vit" >+84 Vietnem</option>
+         <option value="ind" >+92 Indonesia</option>
+        </select>
+        <input id="dalo" type="text" placeholder=" Mobile Number/email" oninput="cap()">
+    </div>
+    <div id="hi"></div>
+    <button id="but"><h3>Continue</h3></button>
+
+
+</body>
+</html>
+<script>
+    
+     let b=document.querySelector("#but")
+    let flag=true
+     let come=JSON.parse(localStorage.getItem("userdata"))
+     b.addEventListener("click",happy)
+
+
+
+    function cap(){
+        let inp= document.querySelector("#dalo").value
+        if(inp==""||inp.length<10){
+         b.style.background="grey"
+        }
+         else{
+         b.style.background="green"
+        }
+
+}
+
+  
+    
+
+function happy(){
+    let inpu= document.querySelector("#dalo").value
+// alert("hello")
+console.log(come)
+
+    for(let i=0;i<come.length;i++){
+        console.log(come[i].number)
+        console.log(inpu)
+        if(come[i].number==inpu||come[i].email==inpu){
+
+        localStorage.setItem("loginpersonname",JSON.stringify(come[i].name))
+         window.location.href="otp.html"
+         break;
+        }
+else{
+   flag=false
+}
+  }
+    
+    if(flag==false){
+      
+
+       let div=document.createElement("div")
+       div.setAttribute("id","ext")
+       let p=document.createElement("p") 
+       p.textContent="New here? Welcome!"
+       let p1=document.createElement("h5") 
+       p1.textContent=`The mobile number "${inpu}" has not been register create a new account`
+       b1=document.createElement("button")
+       b1.textContent="Register"
+       div.append(p,p1,b1)
+       document.querySelector("#container").style.opacity="0.2"
+  
+     document.querySelector("#hi").append(div)
+       b1.addEventListener("click",function(){
+           go()
+       })
+     
+    }
+
+}
+function go(){
+    window.location.href="signup.html"
+}
+   
+  
+
+  
+
+
+</script>
