@@ -1,0 +1,122 @@
+#container div,img,video{
+    padding: 2%;
+  }
+#one{
+  background-image: url("https://www.zoomcar.com/zap/subscribe/build/afea1aa2acac35ddd7f67705e34fb2ad.jpg");
+  padding: 2%;
+  background-repeat: no-repeat ;
+  background-size: cover;
+  margin:auto;
+border-radius: 10px;
+  background-position-y: 80%;
+  
+}
+#one{
+ color:white;
+ width: 70%;
+}
+button{
+ background: green;
+ padding: 5px;
+ color: white;
+}
+#two{
+ width:70%;
+ margin: auto;
+ height: 50px;
+ align-items: center;
+ display: flex;
+ flex-direction: column;
+}
+#two video{
+ width:100%;
+ height: 500px;
+}
+#container div{
+ width: 70%;
+ margin: auto;
+ 
+}
+#two img{
+ width:100%;
+ margin: auto;
+}
+.three{
+ display :flex;
+
+ padding: 1%;
+
+}
+.three img,p,h2{
+ padding: 5%;
+}
+#four{
+ display:flex; 
+}
+#four div{
+ width: 50%;
+ margin:1%;
+
+}
+#four img{
+ width:100%
+}
+#secpart{
+margin-top: 1%;
+width:70%;
+margin-left:15%;
+overflow-x: hidden;
+overflow-x: scroll;
+}
+.h{
+margin-top: 130%; 
+margin-left: 30%;
+}
+#secpart div{
+width:130%;
+margin:2%
+}
+#secpart h1{
+margin-left: 30%;
+}
+#thirdpart{
+display: flex;
+margin-left: 20%;
+}
+#thirdpart div{
+padding-right: 5%;
+padding-left: 5%;
+border-right: 1px solid grey;
+}
+#thirddetail,.cal,#lastpart{
+margin-left: 20%;
+}
+#thirddetail h1{
+margin-left: 5%;
+font-size: 50px;
+}
+p{
+color: grey;
+}
+.gre,.subsix{
+color: green;
+}
+.cal,#fifth,#six{
+display: flex;
+
+}
+.subsix{
+display: flex;
+justify-content: space-around;
+}
+#lastpart div{
+padding: 2%;
+}
+#foot{
+background-color: grey;
+width:100%;
+}
+.line p{
+border-bottom: 1px solid grey;
+padding-bottom:1% ;
+}

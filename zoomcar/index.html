@@ -9,8 +9,9 @@
 <body>
     <div id="navbar">
 
-        <button><h3 onclick="window.location.href=`num.html`">login/signup</h3><h4 onclick="details()"></h4></button>
-          <div id="show"></div>
+        <button><h3 onclick="window.location.href=`num.html`">login/signup</h3><h4 id="emp" onclick="details()"></h4></button>
+        <div id="show"></div>
+       <button id="out"onclick="logout()">logout</button>
     </div>
 </body>
 </html>
@@ -42,6 +43,12 @@ b.map(function(el){
 })
     
 }
+function logout(){
+    document.querySelector("#show").innerHTML=""
+    document.querySelector("#emp").innerHTML=""
+}
+
+
 
 
 </script>
