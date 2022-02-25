@@ -85,13 +85,14 @@ cont.append(div)
 
 }
 
-let ninty1=[];
-let onetwenty1 =[];
+
+
 var carsdata = JSON.parse(localStorage.getItem("cars"))
 
 
 function ninty(){
     var carsdata = JSON.parse(localStorage.getItem("cars"))
+    var ninty1=[];
 
     //document.getElementsByClassName("filter_list").style.backgroundColor = "green";
     
@@ -108,7 +109,7 @@ function ninty(){
 
 function onetwenty(){
     var carsdata = JSON.parse(localStorage.getItem("cars"))
-
+    var onetwenty1 =[];
 
   //  document.getElementsByClassName("filter_list").style.backgroundColor = "green";
 
@@ -121,13 +122,13 @@ function onetwenty(){
     showdata(onetwenty1);
 }
 
-var fiveSeater = [];
-var sixSeater = [];
-var sevenSeater =[]
+
+
+
 
 function five(){
     var carsdata = JSON.parse(localStorage.getItem("cars"))
-
+    var fiveSeater = [];
     let select_cars = carsdata[city];
     select_cars.forEach((e) =>{
  if(e.Seater==5){
@@ -140,7 +141,7 @@ showdata(fiveSeater)
 
 function seven(){
     var carsdata = JSON.parse(localStorage.getItem("cars"))
-
+    var sevenSeater =[]
     let select_cars = carsdata[city];
     select_cars.forEach((e) =>{
  if(e.Seater==7){
@@ -152,7 +153,7 @@ showdata(sevenSeater)
 
 function six(){
     var carsdata = JSON.parse(localStorage.getItem("cars"))
-
+    var sixSeater = [];
     let select_cars = carsdata[city];
     select_cars.forEach((e) =>{
  if(e.Seater==6){
@@ -162,12 +163,12 @@ function six(){
 showdata(sixSeater)
 }
 
-var deisel =[]
-var petrol =[]
+
+
 
 function deiselcar(){
     var carsdata = JSON.parse(localStorage.getItem("cars"))
-
+    var deisel =[]
     let select_cars = carsdata[city];
     select_cars.forEach((e)=>{
         if(e.fuel=="Diesel"){
@@ -180,7 +181,7 @@ function deiselcar(){
 
 function petrolcar(){
     var carsdata = JSON.parse(localStorage.getItem("cars"))
-
+    var petrol =[]
     let select_cars = carsdata[city];
     select_cars.forEach((e)=>{
         if(e.fuel=="Petrol"){
@@ -191,12 +192,11 @@ function petrolcar(){
 
 }
 
-let hatchback =[];
-let sedan =[];
 
 
 function hatchbackcar(){
     var carsdata = JSON.parse(localStorage.getItem("cars"))
+    var hatchback =[];
 
     let select_cars = carsdata[city];
     select_cars.forEach((e)=>{
@@ -211,6 +211,7 @@ function hatchbackcar(){
 
 function sedancar(){
     var carsdata = JSON.parse(localStorage.getItem("cars"))
+    var sedan =[];
 
     let select_cars = carsdata[city];
     select_cars.forEach((e)=>{
@@ -222,12 +223,11 @@ function sedancar(){
 
 }
 
-let home =[]
-let airport =[]
+
   
 function Homecar(){
     var carsdata = JSON.parse(localStorage.getItem("cars"))
-
+    var home =[]
     let select_cars=carsdata[city];
     select_cars.forEach((e)=>{
 if(e.type=="homecar"){
@@ -240,6 +240,7 @@ if(e.type=="homecar"){
 function Airportcar(){
     var carsdata = JSON.parse(localStorage.getItem("cars"))
 
+    var airport =[]
     let select_cars=carsdata[city];
     select_cars.forEach((e)=>{
 if(e.type=="airportcar"){
@@ -252,3 +253,5 @@ if(e.type=="airportcar"){
 function showsidebar(){
     let sidebar
 }
+
+

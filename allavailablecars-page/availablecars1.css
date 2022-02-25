@@ -8,9 +8,6 @@
     
 }
 
-body{
-    overflow-x: hidden;
-}
 
 /* city-selection-start */
 a{
@@ -105,7 +102,7 @@ height: 60px;
 }
 
 #ham{
-    width: 30px;
+    width: 50px;
     cursor: pointer;
     margin-left: 20px;
     color: white;
