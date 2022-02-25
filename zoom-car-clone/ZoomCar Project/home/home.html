@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <div id="container">
+        <div id="navbar">
+        </div>
+        <div id="home">
+            <div id="body">
+                <div id="roundTrip">
+                    <p>Round Trip <i class="fas fa-caret-down"></i></p>
+                </div>
+                <div id="trip">
+                    <div class = "close_trip">
+                        <h1>X</h1>
+                    </div>
+                    <div id="tripSearch">
+                        <h5>Travelling From</h5>
+                        <div class="trip_img">
+                            <img src="https://zoomcar-assets.zoomcar.com/photos/original/f00bd521d24e52b5ca9a2a3b8bb2ebf49df9e933.png?1497538418">
+                            <p>Banglore</p>
+                            <i class="fas fa-caret-down"></i>
+                        </div>
+                        <div class="trip_div">
+                            <div>
+                                <h4>Schedule a Round Trip</h4>
+                                <p>Qutstation Road Trips, Long Drives, Shopping Malls etc</p>
+                            </div>
+                            <div>
+                                <img src="https://www.zoomcar.com/build/fb65fcc43b8bededb813e093ea2d47d3.svg">
+                            </div>
+                        </div>
+                        <div class="trip_div">
+                            <div>
+                                <h4>One-Way to Nearby Cities</h4>
+                                <p>Drop off in a nearby city after a one-way trip.</p>
+                            </div>
+                            
+                            <div>
+                                <img src="https://www.zoomcar.com/build/fb65fcc43b8bededb813e093ea2d47d3.svg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="pickup">
+                    <p>Pick Up City, Airport, Address or Hotel</p>
+                </div>
+                <div id="pick_up">
+                    <div id="back_arrow" ><i class="fas fa-arrow-left"></i></div>
+                    
+                    <div id="search">
+                        <input type="text" placeholder="Select your starting point">
+                        <div id="currLocation">
+                            <i class="fas fa-crosshairs"></i>
+                            <p>Current Location</p>
+                        </div>
+                        <div id="map">
+                            <div id="main">
+                                <div class="mapouter">
+                                  <div class="gmap_canvas">
+                                    <iframe style="width: 100%; height: 100%;" id="gmap_canvas" src="https://maps.google.com/maps?q=darbhanga&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                  </div>
+                                  <button id="continue" onclick="window.location.href='home.html'">Continue</button>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div id="location">
+                            <i class="fas fa-map"></i>
+                            <p>Select Location</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="pickoff">
+                    <p>Drop Off City, Airport, Address or Hotel</p>
+                </div>
+                <button id="findCar">FIND CARS</button>
+            </div>
+        </div>
+        <div id="img_box">
+            <div><img src="https://www.zoomcar.com/build/2bd9b312f575510da149ed2a8b862852.jpeg"></div>
+            <div><img src="https://zoomcar-assets.zoomcar.com/pictures/original/2c4154fb9da48257e27730f6869d69ddda541410.jpeg?1644819459"></div>
+            <div><img src="https://zoomcar-assets.zoomcar.com/pictures/original/378f52cd9ee91c071304836fb21b9be5fd09c69e.jpeg?1642478236"></div>
+            <div><img src="https://zoomcar-assets.zoomcar.com/pictures/original/f78731484afd06bb92b74feb680b8c208836ec5d.jpeg?1644411126"></div>
+            <div><img src="https://zoomcar-assets.zoomcar.com/pictures/original/e027e9afe24bd72fed58549e845dffcf8cdf1ba8.jpg?1633439546"></div>
+            <div><img src="https://zoomcar-assets.zoomcar.com/pictures/original/02dd1b11f8883a54f4591e945bf6597b2832edbb.png?1633777179"></div>
+            <div><img src="https://zoomcar-assets.zoomcar.com/pictures/original/62008d3494f5ee4eb8118692137da0772830a3eb.jpg?1633439109"></div>
+        </div>
+        <div id="box">
+            <div class="refer">
+                <div><img src="https://zoomcar-assets.zoomcar.com/images/original/85fef585709cb289fd06adeabd230c5383200f20.png?1545144526"></div>
+                <div>
+                    <h4>REFER AND EARN</h4>
+                    <p>You earn 500 credits, your friend gets 30% (upto<br> Rs. 2500) off on their first booking of at least 8<br> hours</p>
+                </div>
+            </div>
+            <div class="refer">
+                <div><img src="https://www.zoomcar.com/img/login-card.jpg"></div>
+                <div>
+                    <h4>LOGIN</h4>
+                    <p>If you have an upcoming or a live booking, then<br> log in to view your booking.</p>
+                </div>   
+            </div>
+        </div>
+        <div id="offers">
+            <h4>OFFERS</h4>
+            <div id="offer_img">
+                <img src="https://zoomcar-assets.zoomcar.com/photos/original/dffb93ebfa97040a71e476405c0c146c5718da4d.jpg?1644857465">
+                <img src="https://zoomcar-assets.zoomcar.com/photos/original/3739f2eb9738437f093a2e4a3488cff77074bc29.jpg?1640267714">
+                <img src="https://zoomcar-assets.zoomcar.com/photos/original/9cff4212398acb2526abe98528ae1e703c169895.jpg?1636736308">
+                <img src="https://zoomcar-assets.zoomcar.com/photos/original/3ab96dc6fe7215bb7522798937cc9ba354186551.jpg?1543320021">
+            </div>
+        </div>
+        <hr>
+        <div id="about_us">
+            <p>About Us  <i class="fas fa-caret-down"></i></p>
+        </div>
+        <div id="about_option">
+            <div>Zoomcar Team</div>
+            <div>Zoomcar Subscription</div>
+            <div>Zoomcar Blog</div>
+            <div>Careers @ Zoomcar</div>
+        </div>
+        <div id="about">
+            <div>
+                <hr>
+                <h5>SELF DRIVE CAR RENTALS IN BANGALORE</h5>
+                <p>Bangalore is a burgeoning cosmopolitan city with a young urban population. Besides the all-inclusive feel, the city is witnessing a shifting culture that calls for an equal focus on work and leisure. Almost every work day ends in a relaxing meal with friends, and frequent road trips are the norm. With youngsters increasingly viewing driving as a pleasure rather than a chore, self drive car rentals have emerged as the answer to a prayer.</p>
+                <br><br>
+                <h5>CAR RENTAL IN BANGALORE</h5>
+                <p>If you love cars, but find it hard to identify one which is perfect for you, Zoomcar serves as an interesting option. We make it possible for you to pick your car based on your travelling needs. While small cars allow you to manoeuvre through city traffic and are ideal for a daily commute, sedans and SUV’s offer more comfort. They are well suited for group travel and can add to the joy of road trips.
+                    Take your friends on a memorable trip from Bangalore to Mysore in a spacious SUV from Zoomcar. A definite perk is that Zoomcar comes with limited liability, and relieve you of the financial burden of investing in a four-wheeler while offering the freedom of having a self driven car at your disposal.   When you choose to drive a car in the city, you do away with the hassle of having to coordinate with the drivers who operate traditional car rentals in Bangalore.
+                    With Zoomcar you can avoid the need to hire an exorbitantly priced Bangalore airport cab. Bangalore airport boasts of a Zoomcar parking lot where you can opt for a car rental in Bangalore without driver as soon as you get off your flight. Indulge your passion for luxury cars and make every a special occasion memorable by opting to drive a slick luxury car yourself. You could opt for it for the sheer pleasure and experience too!  </p>
+                <br><br>
+                <h5>CAR ON RENT IN BANGALORE</h5>
+                <p>Your experience with Zoomcar begins with the convenience of online booking. The cars listed on our site come with all India permits, Road Side Assistance (RSA), and include vehicle insurance. It is extremely easy to pick the car as there are multiple parking sites across the city. They also prove to be a safe bet for independent, young women who like to be behind the wheel. Whether you need it for a couple of hours or require it over many days, you can choose the perfect self-drive car.Hire a car in Bangalore through the Zoomcar app or online conveniently for tech-enabled booking, tracking and hassle-free payment options.</p>
+                <br><br>
+                <h5>ABOUT ZOOMCAR</h5>
+                <p>No more worries about petrol mileage, fuel costs, insurance, and car breakdowns! Zoomcar has enabled driving convenience for travellers around the country and is fast expanding its reach to cities including Ahmedabad, Bangalore, Chandigarh, Chennai, Coimbatore, Delhi-NCR, Hyderabad, Jaipur, Kochi, Kolkata, Ludhiana, Mangalore, Mumbai, Mysore, Pune, Siliguri and Vizag.<br><br>
+                    Self drive cars from Zoomcar have given customers more control, privacy, and freedom. Book a self drive car in any city you visit with the Zoomcar app on your phone and feel at home wherever you go. </p>
+            </div>
+        </div>
+        <div id="copyright">
+            <div>&copy;Copyright 2021 Zoomcar India Private Ltd. All rights reserved</div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="https://kit.fontawesome.com/65d9e63589.js" crossorigin="anonymous"></script>
+<script type="module" src="home.js">
+
+</script>
+
