@@ -120,3 +120,17 @@ width:100%;
 border-bottom: 1px solid grey;
 padding-bottom:1% ;
 }
+a{
+  color: green;
+}
+
+.imi img{
+  margin-left: 10%;
+}
+.im1{
+  margin-left: 20%;
+}
+#six div{
+  margin:1%;
+
+}
