@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          input{
+         padding: 1%;
+         border-radius: 5px;
+         border: 1px solid green;
+         width:30%;
+      margin-left: 20%;
+      margin-top: 2%;
+     }
+     h4{
+         color: green;
+     }
+     h1,p,h4{
+         margin-left: 20%;
+     }
+     #num1{
+         display: flex;
+         
+        
+     }
+     .nu0{
+         color: grey;
+     }
+     #nu{
+         margin-left: 1%;
+     }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Enter 6-digit otp</h1>
+        <input id="dalo" type="text" placeholder="otp">
+        <div id="num1">  <p class="nu0"> resend otp in</p>  <p id="nu"></p> </div>
+     
+        <h4>resend otp</h4>
+        <h4 onclick="window.location.href='pass.html'">  Use password</h4>
+
+    </div>
+  
+</body>
+</html>
+<script>
+ let val=document.querySelector("#dalo").value
+let count=20
+//  function setInterval(() => {
+//      count--
+//      document.querySelector("#nu").append(count)
+//  },1000);
+
+ document.querySelector("#dalo").addEventListener("keypress",pre)
+
+
+setInterval(()=>{
+   count--
+   document.querySelector("#nu").innerHTML=""
+    document.querySelector("#nu").append(count)
+    if(count==0){
+        count=20
+    }
+
+},1000)
+
+
+ function pre(e){
+    let val=document.querySelector("#dalo").value
+     if(e.key=="Enter"){
+         if(val=="123456"){
+        alert("successfully login")
+     window.location.href="index.html"
+     }
+    }
+   
+ }
+
+
+ 
+
+</script>
