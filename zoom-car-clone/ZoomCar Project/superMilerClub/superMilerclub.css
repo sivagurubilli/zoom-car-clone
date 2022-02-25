@@ -1,0 +1,26 @@
+#main{
+    margin-top: 8%;
+   text-align: center;
+   margin-bottom: 10%;
+}
+#main>img{
+    align-items: center;
+}
+#footer{
+    height: 60px;
+    width: 98%;
+    background-color: green;
+    color: whitesmoke;
+    border-radius: 8px;
+    position: fixed;
+    z-index: 1;
+    bottom: -91%;
+    margin: auto;
+    text-align: center;
+    margin-left: 1%;
+}
+#footer>h3{
+    height: 20px;
+    text-align: center;
+    margin-top: 1%;
+}
