@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel ="stylesheet" href="all-available-cars.css">
+   
+    <title>all-available-cars</title>
+    <link rel="stylesheet" href= "availablecars1.css">
 </head>
+  
+
 <body>
     <!--city selection start-->
     <div class ="city-box">
-        <div class ="city-in">
-            <div class="city-selection">
-                <div class ="city-list">
-                    <div class="title">Select your country && city</div>
-<div class="dropdown-wrapper">
+                <div class="title">Select your country && city</div>
+<div class="dropdownbox">
     <div>
-        <select name ="select_country" id ="">
+        <select name ="select_country" id ="selectcountry">
             <option value ="">Select country</option>
         <option value ="india">india</option>
         </select>
     </div>
 <div>
-<select name ="selected_city" id ="selected_city onchange="confirm()">
-    <option value =select city>select city</option>
+<select name ="selected_city" id ="selected_city" onchange="confirm()">
+    <option value ="select_city">select city</option>
 <option value ="Bangalore">Bangalore</option>
 <option value ="Pune">pune</option>
 <option value="Delhi">Delhi NCR</option>
@@ -32,13 +32,10 @@
 </select>
 
 </div>
-</div>
+
 <button disabled="disabled" class="city-box-btn" onclick="confirmcity()">Confirm</button>
                 </div>
-
-            </div>
-
-        </div>
+      
     </div>
 
 
@@ -46,7 +43,7 @@
 <!--navbar start-->
 <div class="header" id ="header">
   
-    <div><img src="https://versified.xyz/img/button.png" id ="ham" onclick="showsidebar()"></div>
+    <div><img src="https://www.clipartmax.com/png/middle/36-365828_navbar-toggle-icon-menu-hamburger-png-white.png" id ="ham" onclick="showsidebar()"></div>
    
     <div><img src ="https://www.zoomcar.com/build/98e56e8b0b91e8806885a22ac2bf69a7.png" id ="nav_logo"></div>
     <div id ="nav">
@@ -69,10 +66,52 @@
 <!--navbar end-->
 
 <div id ="body1">
-<div id ="sidebar">
+<div id ="sidebox">
+<div class ="filter_kms">
+    <p>Free kms</p>
+    <div class="filter_items">
+<button onclick ="ninty()" class="filter_list">90</button>
+<button onclick="onetwenty()" class="filter_list">120</button>
+    </div>
+
+</div>
+<div class ="filter_fuel">
+<p>Fuel type</p>
+    <div class ="filter_items">
+        <button onclick="deiselcar()" id ="filter5">Deisel</button>
+        <button onclick="petrolcar()" id ="filter6">Petrol</button>
+
+    </div>
+
+</div>
 
 
+<div class ="filter_seats">
+<p>Seats</p>
+    <div class ="filter_items">
+    
+    <button onclick="five()" id ="filter5">5</button>
+    <button onclick="six()" id ="filter6">6</button>
+    <button onclick="seven()" id ="filter7">7</button>
+</div>
+</div>
+<div class ="filter_cartype">
+<p>Car Types</p>
+    <div class ="filter_items">
+        <button onclick="hatchbackcar()" id ="hatch">Hatchback</button>
+        <button onclick="sedancar()" id ="sedan">Sedan</button>
 
+    </div>
+</div>
+
+<div class ="filter_delivery">
+<p>Delivery Type</p>
+    <div class ="filter_items">
+    <button onclick="Homecar()" class ="homedel">Home Delivery</button>
+    <button onclick="Airportcar()" class ="airportdel">Airport Delivery</button>
+</div>
+
+</div>
 </div>
 <div id="maincont">
 <div id ="addressbox"></div>
@@ -96,10 +135,15 @@
     </div>
 </div>
 </div>
-
+<div id ="cont">
+    
 </div>
 
-<div id ="cont"></div>
+
+</div>
+<div class ="sidebarbox">
+    <div class="b"></div>
+</div>
 
 
 </body>

@@ -8,9 +8,6 @@
     
 }
 
-body{
-    overflow-x: hidden;
-}
 
 /* city-selection-start */
 a{
@@ -28,54 +25,18 @@ a{
     z-index: 999;
     display: none;
 }
-.city-box .city-inner{
-    width: 100%;
-    background-color: #fff;
-    padding: 20px 0;
-    height: 533px;
-}
 
-@media(min-width:1140px){
-    .city-box .city-inner{
-        height: 433px;
-    }
-}
 
-.city-box .city-selection{
-    max-width: 1080px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.city-box .city-selection .city-list .title{
-    font-size: 30px;
-    font-weight: 300;
-    margin-bottom: 50px;
-}
-
-@media screen and (min-width:768px) {
-    .city-box .city-selection .city-list .title{
-        margin-bottom: 50px;
-    }
-}
-
-.city-box .dropdown-wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
 
 @media screen and (min-width:1140px) {
-    .city-box .dropdown-wrapper{
+    .city-box .drapdownbox{
         flex-direction: row;
         flex-wrap: nowrap;
     }
     
 }
 
-.city-box .dropdown-wrapper>div{
+.city-box .drapdownbox>div{
     max-width: 328px;
     width: 100%;
     margin: 0 30px;
@@ -84,7 +45,7 @@ a{
 
 }
 
-.city-box .dropdown-wrapper>div select{
+.city-box .drapdownbox>div select{
     float: right;
     width: 100%;
     padding: 15px;
@@ -124,6 +85,8 @@ option{
     border-color: #e0e0e0;
     box-shadow: 0px 8px 15px rgba(0,0,0,0.1);
 }
+
+/* nav bar start */
 .header{
 
 height: 60px;
@@ -139,7 +102,7 @@ height: 60px;
 }
 
 #ham{
-    width: 30px;
+    width: 50px;
     cursor: pointer;
     margin-left: 20px;
     color: white;
@@ -191,31 +154,40 @@ header>#nav>ul>li{
 
 #body1{
     display: flex;
-    height: 600px;
+    height: auto;
    
 }
-#sidebar{
+/* side box*/
+#sidebox{
     width: 20%;
     margin-top: 20px;
     margin-left: 100px;
-    border: 1px solid red;
+    border: 1px solid green;
+   
 }
+
+#sidebox p{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
 #maincont{
     width: 70%;
     margin: 20px 20px 20px 20px;
-    border: 1px solid red;
+    
 }
-
+/* address box */
 #addressbox{
     margin-top: 16px;
     width: 100%;
-    height: 30px;
+    height: 40px;
     padding-left: 10px;
     background-color: rgb(255, 254, 254);
     border: 1px solid rgb(19, 228, 12);
     padding: 8px;
 
 }
+/* date box on top side*/
 #datebox{
     margin-top: 10px;
     display:inline-block;
@@ -232,15 +204,15 @@ header>#nav>ul>li{
 }
 .date2{
     margin-top: 10px;
-    margin-left: 150px;
+    margin-left: 50%;
     text-align: center;
 }
 .date3{
     margin-top: 10px;
-    margin-left: 280px;
+    margin-left: 70%;
     text-align: center;
 }
-
+/* top 3rd box */
 #delivery{
 display :grid;
 grid-template-columns: 10% 80%;
@@ -271,4 +243,103 @@ border:1px solid rgb(221, 221, 221)
     color:#a8a8a8;
     letter-spacing: 0.4px;
 }
+/* filtering boxe*/
+
+.filter_kms{
+   height: 100px;
+  
+  
+}
+/*filterin items box*/
+
+.filter_items{
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+   background-color: gray;
+    display: flex;
+}
+.filter_list{
+    margin: 10px 10px;
+    height: 30px;
+    width: 80px;
+}
+/*filter by furl*/
+.filter_items_fuel{
+    width: 80px;
+    height: 30px;
+    margin: 10px 10px;
+}
+/* filtering by seats */
+
+#filter5,#filter6,#filter7{
+    margin-top:10px;
+    height: 30px;
+    width: 80px;
+    margin: 10px 10px;
+}
+button:hover{
+    background-color: green;
+    cursor: pointer;
+}
+#hatch,#sedan{
+    height: 30px;
+width:100px;
+margin: 10px 10px;
+}
+
+.homedel,.airportdel{
+    height: 30px;
+    width:100px;
+    margin: 10px 10px;
+}
+
+/* cars container*/
+#cont{
+    height: 500px;
+    width:100%;
+    margin-top: 16px;
+   
+}
+#cont #image{
+    width:180px;
+    height: 160px;
+}
+#cont>div{
+    margin:10px;
+    border: 1px solid rgb(211,207,207);
+    display: flex;
+    gap: 10px;
+}
+#cont>div>h3{
+    margin-right: 30px;
+}
+
+/* book now button styling*/
+#cont>div>h3>button{
+    width: 120px;
+    height: 40px;
+    color:rgb(19,19,22);
+    border-radius: 4px;
+    border: 1px solid rgb(98,243,53);
+    margin-top:70px;
+}
+#cont>div>p{
+    width: 650px;
+    height: 100px;
+    margin-left: 30px;
+}
+
+#cont>div>p>p{
+    margin: 5px;
+    font-size: 14px;
+}
+#center{
+    margin-left: 50px;
+    margin-top: 5px;
+}
+#price{
+    margin-top: 20px;
+}
+
 
