@@ -1,5 +1,6 @@
-    
-    
+    var city2 =JSON.parse(localStorage.getItem("city"))
+    var city1 =document.getElementById("city1")
+    city1.innerHTML = city2
     
     var cont =document.getElementById("container")
     // Appending NavBar

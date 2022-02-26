@@ -31,7 +31,7 @@
             width: 25%;
             height: 60px;
         }
-        #confirm{
+        #confirm1{
             color: white;
             background-color:rgb(16,163,16) ;
             width: 25%;
@@ -81,13 +81,23 @@
       </select>
     </div>
     <div id="con">
-        <button id="confirm"><a href="###"></a>
-           <b> CONFIRM </b>
-        </button>
+        <button id="confirm1">Confirm</button>
     </div>
     </div>
 </body>
 </html>
 <script>
+
+let confirm1 =document.getElementById("confirm1");
+
+
+
+confirm1.onclick = function (){
+    var city1 = document.getElementById("city")
+    var c = city1.value
+localStorage.setItem("city",JSON.stringify(c))
+  window.location.href ="/home/home.html"
+}
+
 
 </script>
