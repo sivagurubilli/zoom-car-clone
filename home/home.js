@@ -1,3 +1,6 @@
+    
+    
+    
     var cont =document.getElementById("container")
     // Appending NavBar
     import navbar from "./components/navbar.js";
@@ -15,6 +18,13 @@
         }
         }
     }
+    let findcar =document.getElementById("findCar");
+
+    findcar.onclick = function (){
+      window.location.href ="/allavailablecars-page/all-available-cars.html"
+    }
+   
+   
 
     // function for pop window
     let trip = document.getElementById("trip");
@@ -94,6 +104,8 @@ let location = document.getElementById("location");
         getMap()
     main.style.display = "block";
 }
+
+
 // back_arrow.onclick = function(){
 //     pick_up.style.display = "none";
 //     nav.style.display = "";
@@ -101,7 +113,7 @@ let location = document.getElementById("location");
 
 let pickup_area = document.querySelector("#pickup>p");
 let pickoff_area = document.querySelector("#pickoff>p");
-let findCar = document.getElementById("findCar");
+//let findCar = document.getElementById("findCar");
 
 let currLocation = document.getElementById("currLocation");
 currLocation.onclick = function(){
@@ -127,6 +139,8 @@ XMLHttp.onreadystatechange = function() {
         setInterval(function(){
             pickoff_area.style.display = "block";
             pickoff_area.innerText = json.city+","+" "+json.country;
+            localStorage.setItem("city",JSON.stringify([json.city]));
+  
             // pickoff_area.style.innerText = "black"
         }, 1000);
         // iframe.src = `https://maps.google.com/maps?q=${x}&t=&z=13&ie=UTF8&iwloc=&output=embed`;

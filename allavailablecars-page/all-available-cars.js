@@ -25,6 +25,9 @@ if(JSON.parse(localStorage.getItem("trip"))[0]=="round"){
 
 
 let city =JSON.parse(localStorage.getItem("city"))
+let changecity1 = document.querySelector(".changecity1");
+
+changecity1.innerText=  city;
 
 addressbox.innerText =  city
 
@@ -32,16 +35,21 @@ function getdata(){
     var carsdata = JSON.parse(localStorage.getItem("cars"))
 
     let city =JSON.parse(localStorage.getItem("city"))
+    
     showdata(carsdata[city])
 }
 getdata();
 
 
+
 function showdata(carsdata1){
+
 
    cont.innerHTML=null
 carsdata1.forEach(function(car){
-    
+   
+
+
     let div =document.createElement('div')
 let image =document.createElement('img')
 image.id="image"
@@ -145,8 +153,9 @@ showdata(fiveSeater)
 
 
 function seven(){
-    var carsdata = JSON.parse(localStorage.getItem("cars"))
     var sevenSeater =[];
+    var carsdata = JSON.parse(localStorage.getItem("cars"))
+  
     let city =JSON.parse(localStorage.getItem("city"))
     let select_cars = carsdata[city];
     select_cars.forEach((e) =>{
@@ -282,8 +291,7 @@ function confirm(){
 function confirmcity(){
     let selected_city =document.getElementById("selected_city").value;
     localStorage.setItem("city",JSON.stringify([selected_city]));
-    let changecity = document.querySelector(".changecity");
-    changecity.innerText= selected_city;
+  
 
     let city_box = document.querySelector(".city-box");
     city_box.style.display = "none";
@@ -342,3 +350,5 @@ function logout(){
     localStorage.setItem("user",null)
     window.location.reload()
 }
+
+

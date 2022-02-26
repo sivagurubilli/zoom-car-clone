@@ -351,7 +351,9 @@ margin: 10px 10px;
 #price{
     margin-top: 20px;
 }
-
+#btn{
+ background-color: #10a310;
+}
 
 /*sidebar when click on ham*/
 .sidebarbox{
@@ -392,11 +394,19 @@ margin-left: 10px;
 .list,.list1{
     height: 30px;
     width: 100%;
+    margin-top: 20px;
     margin-left: 10px;
-}
+    display: flex;
 
+}
+.changecity1{
+ margin-left: 20px;
+color: pink;
+ width: 100px;
+
+}
 .logout{
-    color:black;
+    color:white;
     margin: 10px;
     cursor: pointer;
 }
@@ -405,8 +415,6 @@ margin-left: 10px;
     height: 30px;
     width: 200px;
     margin-left: 20px;
-   
-
 }
 
 .dropdownbox{
@@ -435,6 +443,7 @@ background-color: aqua;
     height: 40px;
     width: 150px;
     margin-top: -10px;
+    background-color: yellowgreen;
 }
 .title{
     margin-top: 40px;
