@@ -31,6 +31,21 @@ changecity1.innerText=  city;
 
 addressbox.innerText =  city
 
+const timeElapsed = Date.now();
+const today = new Date(timeElapsed);
+today.toDateString();
+
+let date2 =document.querySelector(".date1")
+let startDate = JSON.parse(localStorage.getItem("date"));
+//startDate = startDate[0] + " " + startDate[1];
+
+date2.innerText = "Start-time:" + " " + today;
+
+let date3 =document.querySelector(".date3")
+let endDate = JSON.parse(localStorage.getItem("date"));
+
+date3.innerText = "End-time:" + " " + endDate;
+
 function getdata(){
     var carsdata = JSON.parse(localStorage.getItem("cars"))
 

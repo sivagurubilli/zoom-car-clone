@@ -25,7 +25,7 @@
                         <div class="trip_img">
                             <img src="https://zoomcar-assets.zoomcar.com/photos/original/f00bd521d24e52b5ca9a2a3b8bb2ebf49df9e933.png?1497538418">
                             <p>Banglore</p>
-                            <i class="fas fa-caret-down"></i>
+                            <i class="fas fa-caret-down" onclick="window.location.href='index.html'"></i>
                         </div>
                         <div class="trip_div">
                             <div>
@@ -49,7 +49,7 @@
                     </div>
                 </div>
                 <div id="pickup">
-                    <p id ="city1">Pick Up City, Airport, Address or Hotel</p>
+                    <p id ="pickupcity">Pick Up City, Airport, Address or Hotel</p>
                 </div>
                 <div id="pick_up">
                     <div id="back_arrow" ><i class="fas fa-arrow-left"></i></div>
@@ -78,21 +78,20 @@
                     </div>
                 </div>
                 <div id="pickoff">
-                    <p id ="city1">Drop Off City, Airport, Address or Hotel</p>
+                    <p >Drop Off City, Airport, Address or Hotel</p>
                 </div>
-              
-                <button  onclick = "findCar()"  id="findCar" >FIND CARS</button>
-            
+                <input type="date" id="date">
+                <button id="findCar">FIND CARS</button>
             </div>
         </div>
         <div id="img_box">
-            <div><img src="https://www.zoomcar.com/build/2bd9b312f575510da149ed2a8b862852.jpeg"></div>
-            <div><img src="https://zoomcar-assets.zoomcar.com/pictures/original/2c4154fb9da48257e27730f6869d69ddda541410.jpeg?1644819459"></div>
-            <div><img src="https://zoomcar-assets.zoomcar.com/pictures/original/378f52cd9ee91c071304836fb21b9be5fd09c69e.jpeg?1642478236"></div>
-            <div><img src="https://zoomcar-assets.zoomcar.com/pictures/original/f78731484afd06bb92b74feb680b8c208836ec5d.jpeg?1644411126"></div>
-            <div><img src="https://zoomcar-assets.zoomcar.com/pictures/original/e027e9afe24bd72fed58549e845dffcf8cdf1ba8.jpg?1633439546"></div>
-            <div><img src="https://zoomcar-assets.zoomcar.com/pictures/original/02dd1b11f8883a54f4591e945bf6597b2832edbb.png?1633777179"></div>
-            <div><img src="https://zoomcar-assets.zoomcar.com/pictures/original/62008d3494f5ee4eb8118692137da0772830a3eb.jpg?1633439109"></div>
+            <div onclick="window.location.href = '#home'"><img src="https://www.zoomcar.com/build/2bd9b312f575510da149ed2a8b862852.jpeg"></div>
+            <div onclick="window.location.href = '#home'"><img src="https://zoomcar-assets.zoomcar.com/pictures/original/2c4154fb9da48257e27730f6869d69ddda541410.jpeg?1644819459"></div>
+            <div onclick="window.location.href = '#home'"><img src="https://zoomcar-assets.zoomcar.com/pictures/original/378f52cd9ee91c071304836fb21b9be5fd09c69e.jpeg?1642478236"></div>
+            <div onclick="window.location.href = '#home'"><img src="https://zoomcar-assets.zoomcar.com/pictures/original/f78731484afd06bb92b74feb680b8c208836ec5d.jpeg?1644411126"></div>
+            <div onclick="window.location.href = '#home'"><img src="https://zoomcar-assets.zoomcar.com/pictures/original/e027e9afe24bd72fed58549e845dffcf8cdf1ba8.jpg?1633439546"></div>
+            <div onclick="window.location.href = '#home'"><img src="https://zoomcar-assets.zoomcar.com/pictures/original/02dd1b11f8883a54f4591e945bf6597b2832edbb.png?1633777179"></div>
+            <div onclick="window.location.href = '#home'"><img src="https://zoomcar-assets.zoomcar.com/pictures/original/62008d3494f5ee4eb8118692137da0772830a3eb.jpg?1633439109"></div>
         </div>
         <div id="box">
             <div class="refer">
@@ -124,7 +123,7 @@
             <p>About Us  <i class="fas fa-caret-down"></i></p>
         </div>
         <div id="about_option">
-            <div>Zoomcar Team</div>
+            <div onclick="window.location.href='zoomCarTeam.html'">Zoomcar Team</div>
             <div>Zoomcar Subscription</div>
             <div>Zoomcar Blog</div>
             <div>Careers @ Zoomcar</div>
@@ -155,5 +154,6 @@
 </body>
 </html>
 <script src="https://kit.fontawesome.com/65d9e63589.js" crossorigin="anonymous"></script>
-<script type="module" src="home.js"></script>
+<script type="module" src="home.js">
 
+</script>
