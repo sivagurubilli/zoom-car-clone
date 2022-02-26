@@ -95,6 +95,8 @@ height: 60px;
     color:white;
     align-items: center;
     display: flex;
+    position: fixed;
+    width: 100%;
 }
 #nav_logo{
     margin-left: 20px;
@@ -151,18 +153,24 @@ header>#nav>ul>li{
 
 /* navbar ending */
 
+body{
+    background-color: whitesmoke;
+}
 
 #body1{
     display: flex;
     height: auto;
    
+  
+   
 }
 /* side box*/
 #sidebox{
     width: 20%;
-    margin-top: 20px;
+    margin-top: 80px;
     margin-left: 100px;
     border: 1px solid green;
+    background-color:violet;
    
 }
 
@@ -174,6 +182,7 @@ header>#nav>ul>li{
 #maincont{
     width: 70%;
     margin: 20px 20px 20px 20px;
+    margin-top: 80px;
     
 }
 /* address box */
@@ -197,6 +206,7 @@ header>#nav>ul>li{
     background-color: rgb(255, 254, 254);
     border: 1px solid rgb(19, 228, 12);
     padding: 8px;
+  
 
 }
 .date1{
@@ -343,3 +353,91 @@ margin: 10px 10px;
 }
 
 
+/*sidebar when click on ham*/
+.sidebarbox{
+margin-top: 60px;
+    position:fixed;
+    width: 300px;
+    height: 400px;
+    display: none;
+    z-index: 10;
+    background-color: grey;
+    border: 1px solid grey;
+
+}
+.sidebar-ovl{
+    position: absolute;
+    height: 7%;
+    background: rgba(0,0,0,0.6);
+    will-change: opacity;
+    width: 100%;
+    cursor: pointer;
+    opacity: 0;
+
+}
+.sidebar{
+    
+    width: 100%;
+    height: 400px;
+   margin-left: 2px;
+   margin-top: 30px;
+}
+
+.sidebar h3{
+color:white;
+margin-top: 20px;
+font-size: 16px;
+margin-left: 10px;
+}
+.list,.list1{
+    height: 30px;
+    width: 100%;
+    margin-left: 10px;
+}
+
+.logout{
+    color:black;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#selected_city,#selectcountry{
+    height: 30px;
+    width: 200px;
+    margin-left: 20px;
+   
+
+}
+
+.dropdownbox{
+    display: flex;
+height: 80px;
+width: 200px;
+margin-top: 10px;
+margin-left: 30px;
+}
+.city-box{
+    height: 100%;
+    width:100%;
+
+background-color: aqua;
+}
+#city-box1{
+    height: 40%;
+    width: 40%;
+    border: 1px solid red;
+    background-color: #35495e;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+.city-box-btn{
+    margin-left:200px;
+    height: 40px;
+    width: 150px;
+    margin-top: -10px;
+}
+.title{
+    margin-top: 40px;
+    margin-left: 120px;
+    color: beige;
+}

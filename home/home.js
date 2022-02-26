@@ -1,8 +1,9 @@
-    
+    var cont =document.getElementById("container")
     // Appending NavBar
-    import navbar from "./components/navbar.js.js";
+    import navbar from "./components/navbar.js";
     let nav = document.getElementById("navbar");
     nav.innerHTML = navbar();    
+  
 
     let sidebar = document.getElementById("sidebar");
     let low_nav = document.getElementById("low_nav");

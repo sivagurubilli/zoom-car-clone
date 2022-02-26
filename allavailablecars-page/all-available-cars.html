@@ -13,6 +13,7 @@
 <body>
     <!--city selection start-->
     <div class ="city-box">
+        <div id ="city-box1">
                 <div class="title">Select your country && city</div>
 <div class="dropdownbox">
     <div>
@@ -32,10 +33,10 @@
 </select>
 
 </div>
-
+</div>
 <button disabled="disabled" class="city-box-btn" onclick="confirmcity()">Confirm</button>
-                </div>
-      
+              
+</div>
     </div>
 
 
@@ -43,16 +44,16 @@
 <!--navbar start-->
 <div class="header" id ="header">
   
-    <div><img src="https://www.clipartmax.com/png/middle/36-365828_navbar-toggle-icon-menu-hamburger-png-white.png" id ="ham" onclick="showsidebar()"></div>
+    <div><img src="https://www.clipartmax.com/png/middle/36-365828_navbar-toggle-icon-menu-hamburger-png-white.png"   id ="ham"  onclick="showsidebar()" ></div>
    
     <div><img src ="https://www.zoomcar.com/build/98e56e8b0b91e8806885a22ac2bf69a7.png" id ="nav_logo"></div>
     <div id ="nav">
      <ul>
-<a href = "./host/host.html">Become a host</a>
-<a href ="./ZMS/Zms.html">ZMS</a>
+<a href = "./zoomcar/host.html">Become a host</a>
+<a href ="./ZMS/main.html">ZMS</a>
 
-<a href ="./Login&Signup/signup.html" id ="user_not_login">
-    <li id ="login">Login/Signup</li>
+<a href ="./.gitattributes/zoomcar/signup.html" id ="user_not_login">
+    <li id ="login">gurubillisiva22</li>
 </a>
 <li id ="user">
     <a href ="#" id ="nav_name"></a>
@@ -135,14 +136,35 @@
     </div>
 </div>
 </div>
+<!--main cars cont-->
 <div id ="cont">
     
 </div>
-
-
 </div>
+
+
 <div class ="sidebarbox">
-    <div class="b"></div>
+    <div class="sidebar-ovl">⭐</div>
+
+    <div class="sidebar">
+
+        <div class ="list">
+            <a href="#" class="changecity" onclick="changecity()">Select city</a>
+        </div>
+
+<div class ="list1">
+        <a href="signup.html" class="signin">Login or Signup</a>
+    </div>
+    
+        <h3 id ="side_name">siva</h3>
+    <h3 id ="side_email">gurubillisiva22@gmail.com</h3>
+    <h3 id ="side_phone">8309795495</h3>
+
+    
+    <h3 class=""policies>policies</h3>
+    <h3 class ="help">Help&support</h3>
+    <div class="logout" onclick="logout()">Logout</div>
+    </div>
 </div>
 
 

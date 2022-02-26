@@ -20,14 +20,18 @@ if(JSON.parse(localStorage.getItem("trip"))[0]=="round"){
     let addressbox = document.getElementById("addressbox")
     addressbox.style.display ="block";
 }
-
-let city =JSON.parse(localStorage.getItem("city"))[0]
 */
 
-let city ="Bangalore"
+
+
+let city =JSON.parse(localStorage.getItem("city"))
+
+addressbox.innerText =  city
+
 function getdata(){
     var carsdata = JSON.parse(localStorage.getItem("cars"))
 
+    let city =JSON.parse(localStorage.getItem("city"))
     showdata(carsdata[city])
 }
 getdata();
@@ -58,12 +62,12 @@ let seater = document.createElement('p')
 seater.innerText = car.Seater+ " " + "Seater";
 
 let Rating = document.createElement('h4')
-Rating.innerText = " " + " " + car.Rating;
+Rating.innerText = " ⭐" + " " + car.Rating;
 
 let left = document.createElement('h3')
 
 let price = document.createElement('h5')
-price.innerText = car.price;
+price.innerText = "₹   " + `${car.price}`;
 price.id ="price"
 
 let btn = document.createElement('button')
@@ -95,7 +99,7 @@ function ninty(){
     var ninty1=[];
 
     //document.getElementsByClassName("filter_list").style.backgroundColor = "green";
-    
+    let city =JSON.parse(localStorage.getItem("city"))
     let select_cars = carsdata[city];
     select_cars.forEach((e) =>{
         if(e.Seater == 5){
@@ -112,7 +116,7 @@ function onetwenty(){
     var onetwenty1 =[];
 
   //  document.getElementsByClassName("filter_list").style.backgroundColor = "green";
-
+  let city =JSON.parse(localStorage.getItem("city"))
     let select_cars = carsdata[city];
     select_cars.forEach((e) =>{
         if(e.Seater == 6){
@@ -129,6 +133,7 @@ function onetwenty(){
 function five(){
     var carsdata = JSON.parse(localStorage.getItem("cars"))
     var fiveSeater = [];
+    let city =JSON.parse(localStorage.getItem("city"))
     let select_cars = carsdata[city];
     select_cars.forEach((e) =>{
  if(e.Seater==5){
@@ -141,7 +146,8 @@ showdata(fiveSeater)
 
 function seven(){
     var carsdata = JSON.parse(localStorage.getItem("cars"))
-    var sevenSeater =[]
+    var sevenSeater =[];
+    let city =JSON.parse(localStorage.getItem("city"))
     let select_cars = carsdata[city];
     select_cars.forEach((e) =>{
  if(e.Seater==7){
@@ -154,6 +160,7 @@ showdata(sevenSeater)
 function six(){
     var carsdata = JSON.parse(localStorage.getItem("cars"))
     var sixSeater = [];
+    let city =JSON.parse(localStorage.getItem("city"))
     let select_cars = carsdata[city];
     select_cars.forEach((e) =>{
  if(e.Seater==6){
@@ -169,6 +176,7 @@ showdata(sixSeater)
 function deiselcar(){
     var carsdata = JSON.parse(localStorage.getItem("cars"))
     var deisel =[]
+    let city =JSON.parse(localStorage.getItem("city"))
     let select_cars = carsdata[city];
     select_cars.forEach((e)=>{
         if(e.fuel=="Diesel"){
@@ -182,6 +190,7 @@ function deiselcar(){
 function petrolcar(){
     var carsdata = JSON.parse(localStorage.getItem("cars"))
     var petrol =[]
+    let city =JSON.parse(localStorage.getItem("city"))
     let select_cars = carsdata[city];
     select_cars.forEach((e)=>{
         if(e.fuel=="Petrol"){
@@ -197,6 +206,7 @@ function petrolcar(){
 function hatchbackcar(){
     var carsdata = JSON.parse(localStorage.getItem("cars"))
     var hatchback =[];
+    let city =JSON.parse(localStorage.getItem("city"))
 
     let select_cars = carsdata[city];
     select_cars.forEach((e)=>{
@@ -212,7 +222,7 @@ function hatchbackcar(){
 function sedancar(){
     var carsdata = JSON.parse(localStorage.getItem("cars"))
     var sedan =[];
-
+    let city =JSON.parse(localStorage.getItem("city"))
     let select_cars = carsdata[city];
     select_cars.forEach((e)=>{
         if(e.Seater==5){
@@ -228,6 +238,7 @@ function sedancar(){
 function Homecar(){
     var carsdata = JSON.parse(localStorage.getItem("cars"))
     var home =[]
+    let city =JSON.parse(localStorage.getItem("city"))
     let select_cars=carsdata[city];
     select_cars.forEach((e)=>{
 if(e.type=="homecar"){
@@ -241,6 +252,7 @@ function Airportcar(){
     var carsdata = JSON.parse(localStorage.getItem("cars"))
 
     var airport =[]
+    let city =JSON.parse(localStorage.getItem("city"))
     let select_cars=carsdata[city];
     select_cars.forEach((e)=>{
 if(e.type=="airportcar"){
@@ -250,8 +262,83 @@ if(e.type=="airportcar"){
     showdata(airport)
 }
 
-function showsidebar(){
-    let sidebar
+if(localStorage.getItem("carShow")== null) {
+localStorage.setItem("carshow",JSON.stringify([]));
+
+
+}
+
+function addtoBook(car) {
+    localStorage.setItem("carshow",JSON.stringify(car));
+    window.location.href = "first.html"
 }
 
 
+function confirm(){
+    let btn = document.querySelector(".city-box-btn");
+    btn.removeAttribute("disabled");
+}
+
+function confirmcity(){
+    let selected_city =document.getElementById("selected_city").value;
+    localStorage.setItem("city",JSON.stringify([selected_city]));
+    let changecity = document.querySelector(".changecity");
+    changecity.innerText= selected_city;
+
+    let city_box = document.querySelector(".city-box");
+    city_box.style.display = "none";
+    window.location.reload();
+}
+//let changecity = document.querySelector(".changecity");
+
+
+
+
+
+function changecity(){
+    let city_box = document.querySelector(".city-box");
+    city_box.style.display ="block";
+    hidesidebar();
+}
+
+
+
+
+
+
+
+// function  when clicking on ham side bar will appear 
+
+function showsidebar(){
+    let sidebarbox =document.querySelector(".sidebarbox");
+    sidebarbox.style.display = "block";
+   
+let sidebar =document.querySelector(".sidebar");
+
+let sidebar_ovl =document.querySelector(".sidebar-ovl");
+sidebar_ovl.style.opacity ="1";
+sidebar_ovl.style.pointerEvents = "auto";
+sidebar_ovl.addEventListener("click",hidesidebar);
+
+
+}
+
+// when clicking on star it hides function
+
+function hidesidebar(){
+    let sidebarbox =document.querySelector(".sidebarbox");
+    sidebarbox.style.display = "none";
+
+    let sidebar =document.querySelector(".sidebar");
+
+    let sidebar_ovl = document.querySelector(".sidebar-ovl");
+    sidebar_ovl.style.opacity ="0";
+ 
+    sidebar_ovl.removeEventListener("click",hidesidebar);
+}
+
+
+function logout(){
+    localStorage.setItem("user",null)
+    window.location.reload()
+}
