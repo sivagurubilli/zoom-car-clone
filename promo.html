@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <script src="https://kit.fontawesome.com/0215cad404.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        .first{
+            width: 100%;
+            height: 35px;
+            background-color: gainsboro;
+            color: gray;
+            
+        }
+        .first >p{
+            margin-left: 30%;
+            padding-top: 4px;
+            font-weight: bold;
+        }
+        .in{
+            outline: none;
+    border: none;
+    flex: 4;
+    border-bottom: 2px solid #76b94e;
+    margin-right: 10px;
+   margin-left: 40%;
+        }
+        button{
+            border: 1px solid #ccc;
+    background: white;
+    color: grey;
+    padding: 9px;
+    font-weight: bold;
+    text-transform: uppercase;
+    flex: 1;
+    border-radius: 2px;
+        }
+        .second{
+            margin-left: 30%;
+            padding-top: 17px;
+            display: flex;
+            justify-content: space-between;
+            width: 8%;
+        }
+        .coupon-name {
+    border: 1px dashed #333;
+    padding: 5px 8px;
+
+}
+.third{
+    margin-left: 31%;
+    padding-top: 2px;
+    font-size: small;
+    color: grey;
+}
+.right1{
+ 
+    margin-left: 30%;
+    font-family:  Arial, sans-serif;
+    color: green;
+    
+}
+.hr1{
+    width: 55%;
+    margin-left: -5px;
+}
+.left2{
+   padding-left: -30px;
+}
+
+
+        
+       
+        
+    </style>
+</head>
+<body>
+    <div class="pt-3 ms-3">
+       <h4> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left ms-2 fs-1 text me-2" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+          </svg> Promotional Offers</h4>
+           </div>
+           <div class="first mt-3"><p>Have a coupon code ?</p></div>
+        <div class=" pt-4" id="text"><input type="text" placeholder="Enter Promo Code" class="in" id="promocode"> <button onclick="press()">apply</button></div>
+        <div class="first mt-3"><p>Or choose an offer from below.</p></div>
+        <div >
+        <div class="second"><input type="radio" class="" id="zoom"> <div class="coupon-name">zoomflat100</div></div>
+       <div class="third">Get Rs.100 off on your ride & get flat 20% off on RTPCR test on Medibuddy (result within 48 hrs & <br> get 1st online Medibuddy consultation free
+    <br> <b class="text-dark d-flex">Valid till 31st Mar 2022   <div class="right1">T&C apply ></div></b>
+    <hr class="hr1">
+    </div> 
+    </div>
+    <div class="second"><input type="radio" class="" id="zoom1"> <div class="coupon-name">almartzoo23</div></div>
+       <div class="third">Get Rs.100 off on your ride & get flat 20% off on RTPCR test on Medibuddy (result within 48 hrs & <br> get 1st online Medibuddy consultation free
+    <br> <b class="text-dark d-flex">Valid till 28th feb 2022   <div class="right1">T&C apply ></div></b>
+    <hr class="hr1">
+    </div> 
+    </div>
+   
+    <div >
+        
+        
+       
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
+<script>
+    let price = JSON.parse(localStorage.getItem("finalprice"))
+    
+    let num = Number(price)
+    console.log(num)
+
+    let promocode = document.querySelector("#promocode")
+    console.log(promocode.value)
+    var radiobox = document.querySelector("#zoom")
+  
+  radiobox.addEventListener('change', function() {
+if (this.checked) {
+ 
+ console.log("checked")
+promocode.value= "zoomflat100"
+} 
+});
+var radiobox1 = document.querySelector("#zoom1")
+  
+  radiobox1.addEventListener('change', function() {
+if (this.checked) {
+ 
+ console.log("checked")
+promocode.value= "almartzoo23"
+} 
+});
+    function press()
+    {
+       
+        if(promocode.value=="masai30")
+        {
+         let disprice = num - (num *0.3)
+          console.log(disprice)
+          localStorage.setItem("disprice",JSON.stringify(disprice))
+          window.location.href='first.html'
+        }
+       else if(promocode.value=="zoomflat100")
+        {
+         let disprice = num - (num *0.1)
+          console.log(disprice)
+          localStorage.setItem("disprice",JSON.stringify(disprice))
+          window.location.href='first.html'
+        }
+        else if(promocode.value=="almartzoo23")
+        {
+         let disprice = num - (num *0.2)
+          console.log(disprice)
+          localStorage.setItem("disprice",JSON.stringify(disprice))
+          window.location.href='first.html'
+        }
+        // else{
+        //     alert("wrong code")
+        // }
+    }
+
+   
+</script>
