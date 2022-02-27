@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <script src="https://kit.fontawesome.com/0215cad404.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+
+       .first{
+           width: 100%;
+           height: 60px;
+           color: white;
+           display: flex;
+       } 
+       
+       .a2{
+           font-size: 12px;
+           color: white;
+           margin-bottom: 20px;
+          
+       }
+       .main{
+           width: 38%;
+           height: 500px;
+           
+           margin: auto;
+       }
+       .fon{
+           font-size: 16px;
+       }
+       #fon2{
+           color: grey;
+           font-size: 12px;
+           margin-left: 34px;
+           margin-bottom: 10px;
+           
+           
+       }
+       .o{
+        width: 100%;
+        height: 120px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+       margin-top: 40px;    
+    
+    }
+    .payment-action {
+    border: none;
+    border-radius: 4px;
+    background-color: #10a310;
+    padding: 16px 20px;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+    font-family: "IBM Plex Sans";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0.8px;
+    color: #fff;
+    max-width: 600px;
+  margin: auto;
+    
+}
+.blur{
+   filter: blur(10px);
+   
+}
+.popup{
+    /* display: none; */
+    width: 30%;
+    height: 350px;
+    
+    
+    background: #fff;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 5px;
+
+
+}
+.inner{
+    padding: 5%;
+    width: 90%;
+    height: 90%;
+    /* border: 1px solid gold; */
+   margin-top: 3.5%;
+   margin-left: 4.5%;
+}
+/* .text-input-wrapper input {
+    border: none;
+    font-family: 'IBM Plex Sans';
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.24px;
+    color: #666;
+    position: relative;
+    border-radius: 4px;
+    border: solid 1px #e0e0e0;
+    background-color: #fff;
+    width: 50%;
+    padding: 16px 12px;
+    outline: none;
+} */
+
+.inputdiv{
+    display: flex;
+    justify-content: space-between;
+}
+.in{
+  width: 33%;
+  height: 40px;
+}
+.text-input-wrapper {
+   
+    padding-bottom: 18px;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+.text-input-wrapper input{
+    width: 100%;
+    height: 40px;
+}
+.last{
+    width: 100%;
+    background-color: silver;
+    text-align: center;
+    color: grey;
+    height: 30px;
+    margin-top: 50px;
+    font-size: small;
+    padding-top: 2px;
+    border-radius: 5px;
+           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+    .hide1{
+        display: none;
+    }    
+       .hide2{
+           display: none;
+       }
+       .marg{
+           margin-top: 100px;
+    margin-left: 450px;
+       }
+       #paydiv{
+           width: 20%;
+           height: 50px;
+           /* border: 1px solid red; */
+           text-align: center;
+           background-color: lightsalmon;
+           color: grey;
+           border-radius: 5px;
+           box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+           /* margin-top:  x; */
+           margin-left: 500px;
+       }
+       
+        
+    </style>
+</head>
+<body>
+    
+    <div id="one">
+    <div class="bg-dark first" >
+        <div class="pt-3 ms-3">
+             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left ms-2 fs-1 text me-2" viewBox="0 0 16 16">
+                 <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+               </svg>
+                </div>
+                <div class="ps-2 mt-2"> <b>Pay INR 870</b><br>
+                    <a class="text-decoration-none a2 ">Thu, 24 Feb, 11:30 AM <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                      </svg> Thu, 24 Feb, 05:30 PM</a></div>
+    </div>
+
+    <div class="main">
+        
+        <div class="d-flex justify-content-between mt-2 border-bottom pb-2"  onclick="toggle()"><div class="fon"> <img width="25px" height="25px" class="me-2" src="https://zoomcar-assets.zoomcar.com/images/original/97f051d76793fffe5ab182ffa58b8eb47c5ba0cf.png?1584453494" alt="">  <span> Credit / Debit / ATM Cards</span> <br>
+          <span id="fon2">All major card are supported here</span> </div> </div>
+          
+          <div class="d-flex justify-content-between mt-2 border-bottom pb-2"><div class="fon"> <img width="25px" height="25px" class="me-2" src="https://zoomcar-assets.zoomcar.com/images/original/4dd051886e5403aafb9725b7d2ab42c80f9b1df6.png?1584453529" alt="">  <span> Net Banking</span> <br>
+            <span id="fon2">All major car banks are supported here</span> </div> </div>
+            <div class="d-flex justify-content-between mt-2 border-bottom pb-2"><div class="fon"> <img width="25px" height="25px" class="me-2" src="https://zoomcar-assets.zoomcar.com/images/original/1317404625e385185d23ea43a0c34569d6432d09.png?1632130014" alt="">  <span> Mobile Wallet</span> <br>
+                <span id="fon2">PayTM</span> </div> </div>
+                <div class="d-flex justify-content-between mt-2 border-bottom pb-2"><div class="fon"> <img width="25px" height="25px" class="me-2" src="https://zoomcar-assets.zoomcar.com/images/original/9fcb8335a89265849f23225858489f2a9ce8e121.png?1584453574" alt="">  <span> UPI</span> <br>
+                    <span id="fon2">Get ₹8 Instant Cashback on using any UPI payment</span> </div> </div>
+           
+    </div>
+
+    <!-- <div class="o">
+       <div class="payment-action " onclick="toggle()" >proceed to pay ₹869</div>
+       
+    </div> -->
+    
+</div>
+
+<div class="popup hide2 marg" id="pop">
+    <div onclick="close1()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16" >
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+      </svg></div>
+   <div class="inner">
+       <div class="d-flex justify-content-between"><div> <span> Enter card details</span> <br>
+    <span>Amount: <span id="amt">1601</span> </span></div> 
+    <img width="25px" height="25px" src="https://www.zoomcar.com/build/760ee3019ff287f2caed7e40c92b1ca5.png" alt="">
+ </div>
+
+<div class="text-input-wrapper">
+ <input  placeholder="Card Number"  type="text" class="" id="in1">
+ </div>
+<div class="d-flex justify-content-between ">
+<input type="text" name=""  placeholder="Expiry (MM/YY)" class="in" id="in2"> <input type="password" placeholder="CVV" class="in" id="in3">
+   </div>
+   <div class="last" onclick="pay()"> <p class="pt-1 "> PAY INR <span  id="final">695</span> </p></div>
+
+</div>
+
+   
+</div>
+<div id="paydiv" class="hide1"><p>Payment succesfull <img width="20px" height="20px" src="https://cdn2.vectorstock.com/i/1000x1000/59/81/green-tick-check-mark-icon-simple-style-vector-8375981.jpg" alt=""> <br>
+    Go back to <span class="text-dark" onclick="window.location.href='home.html'"> <b>Home Page</b> </span></p>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
+<script>
+    let price = JSON.parse(localStorage.getItem("checkout"))
+console.log(price)
+document.querySelector("#final").textContent =price
+document.querySelector("#amt").textContent = `₹${price}`
+    function toggle()
+    {
+       var blur = document.querySelector("#one")
+       blur.classList.add("hide1")
+       var pop =document.querySelector("#pop")
+       pop.classList.remove("hide2")
+    
+      
+    }
+    function close1()
+    {
+        var pop1 =document.querySelector("#pop")
+        pop1.classList.add("hide2")
+        
+       var blur = document.querySelector("#one")
+       blur.classList.remove("hide1")
+    }
+  
+    function pay()
+    {
+        let in1 = document.querySelector("#in1").value
+    console.log(in1)
+        let in2 = document.querySelector("#in2").value
+        console.log(in2)
+        let in3 = document.querySelector("#in3").value
+        console.log(in3)
+   
+    
+        console.log("yes")
+        if(in1.length == 5 && in2.length== 4 && in3.length == 3)
+        {
+        //    alert("payment success go back to home page")
+           var pop1 =document.querySelector("#pop")
+        pop1.classList.add("blur")
+           let paydiv = document.querySelector("#paydiv")
+           paydiv.classList.remove("hide1")
+        }
+        else{
+            alert("fill all detail correctly")
+        }
+        
+    }
+    
+</script>
