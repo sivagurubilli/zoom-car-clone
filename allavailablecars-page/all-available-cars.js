@@ -372,7 +372,14 @@ function hidesidebar(){
 
 function logout(){
     localStorage.setItem("user",null)
+  
     window.location.reload()
+    
 }
 
 
+var login =document.getElementById("login")
+
+let a=JSON.parse(localStorage.getItem("loginpersonname"))
+
+login.append(a)
