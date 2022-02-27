@@ -110,17 +110,20 @@ if (this.readyState == 4 && this.status == 200) {
     nav.style.display = "";
     // date.style.display="none";
     pickup_area.innerText = json.city+","+" "+json.country;
-   
+   localStorage.setItem("city",JSON.stringify(json.city))
     
     pickup_area.style.color = "black";
     pickoff.style.display = "block";
     findCar.style.backgroundColor = "green";
     findCar.style.color = "white";
     findCar.style.cursor = "pointer";
-    console.log(json.city+json.country);
+    //console.log(json.city+json.country);
+     
+    
     setInterval(function(){
         pickoff_area.style.display = "block";
         pickoff_area.innerText = json.city+","+" "+json.country;
+      
         // date.style.display = "block";
         pickoff_area.style.innerText = "black"
     }, 3000);
@@ -161,6 +164,6 @@ findcars.onclick = function() {
     window.location.href ="/allavailablecars-page/all-available-cars.html"
 }
 
-var pickupcity =document.getElementById("pickupcity")
+var pickupcity1 =document.getElementById("pickupcity")
 var city = JSON.parse(localStorage.getItem("city"));
-pickupcity.innerText = city
+pickupcity1.innerText = city

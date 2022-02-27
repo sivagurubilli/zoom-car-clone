@@ -29,7 +29,7 @@ let changecity1 = document.querySelector(".changecity1");
 
 changecity1.innerText=  city;
 
-addressbox.innerText =  city
+addressbox.innerText =  city +"  " + ",    india"
 
 const timeElapsed = Date.now();
 const today = new Date(timeElapsed);
