@@ -60,7 +60,7 @@ option{
     padding: 25px;
 }
 
-
+/* button cars div*/
 .city-box-btn{
     max-width: 328px;
     width: 100%;
@@ -97,6 +97,7 @@ height: 60px;
     display: flex;
     position: fixed;
     width: 100%;
+    height: 80px;
 }
 #nav_logo{
     margin-left: 20px;
@@ -167,7 +168,7 @@ body{
 /* side box*/
 #sidebox{
     width: 20%;
-    margin-top: 80px;
+    margin-top: 100px;
     margin-left: 100px;
     border: 1px solid green;
     background-color:lavender;
@@ -182,7 +183,7 @@ body{
 #maincont{
     width: 70%;
     margin: 20px 20px 20px 20px;
-    margin-top: 80px;
+    margin-top: 100px;
     
 }
 /* address box */
