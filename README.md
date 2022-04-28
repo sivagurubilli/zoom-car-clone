@@ -16,9 +16,7 @@ We have used  HTmL CSS, Advance JavaScript, Paytm Payment API, Google API, Expre
 
 # <span style="color:red"> Details of Tech stack used: </span>
 
-<b>EJS:</b>
 
-We have used Embedded JavaScript Template (ejs) for frontend to communicate with Backend.
 
  <b>CSS:</b>
 
@@ -28,15 +26,6 @@ We have used to add styling to the website. We used Advance CSS for Popup Modal 
 
 We have used to add logical functionalities to the web pages like the on Click function. We have added all the functionalities.
 
-<b>MongoDb</b>
-
-We have used MongoDb atlas realtime storage as database for storing user's data, car details.
-
-<b> Express :</b>
-We have used Express for route using async await for asking data from the Backend etc. 
-
-<b> Mongoose :</b>
-We have used Mongoose Package to established connection  express and Database.
 
 # <span style="color:red"> Experience of team: </span>
 
