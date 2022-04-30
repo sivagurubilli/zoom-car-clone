@@ -28,11 +28,11 @@ We have used to add logical functionalities to the web pages like the on Click f
 
 
 # <span style="color:red"> Team members: </span>
-## Tanya Srivstava
-## Anjali priya
-## Shivani sharma
-## Noorish nouman
-## Siva gurubilli
+## 1) Tanya Srivstava
+## 2) Anjali priya
+## 3)Shivani sharma
+## 4) Noorish nouman
+## 5) Siva gurubilli
 <br/>
 
 
