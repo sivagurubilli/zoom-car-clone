@@ -27,9 +27,19 @@ We have used to add styling to the website. We used Advance CSS for Popup Modal 
 We have used to add logical functionalities to the web pages like the on Click function. We have added all the functionalities.
 
 
-# <span style="color:red"> Experience of team: </span>
+# <span style="color:red"> Team members: </span>
+## Tanya Srivstava
+## Anjali priya
+## Shivani sharma
+## Noorish nouman
+## Siva gurubilli
+<br/>
 
-Let us share our experience,<br>
+
+## <span style="color:red"> Experience of team: </span>
+
+ ## Let us share our experience
+
 This entire journey of making the project was awesome. We have learned lots of things by applying to the real website and it gave us a lot of confidence. there were some more functionalities that could have been done, the time didn’t permit us to go further. But we will surely improve it during the course of time in future .
 
 
